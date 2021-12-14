@@ -1,0 +1,51 @@
+<div>
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav (click)="closeSidenav()"
+        #drawer 
+        class="sidenav"
+        fixedInViewport="false"      
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'">
+      <mat-nav-list>
+        <a mat-list-item routerLink="/">
+          <i class="fas fa-home" matTooltip="Home"></i>
+        </a>
+        <a mat-list-item class="mat-button" routerLink="/home">Hem</a>
+        <a mat-list-item class="mat-button" routerLink="/news">Nyheter</a>
+        <a mat-list-item class="mat-button" routerLink="/about">Föreningen</a>
+        <a mat-list-item class="mat-button" routerLink="/media">Mediearkiv</a>
+        <a mat-list-item class="mat-button" routerLink="/contactus">Kontakta oss</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar color="primary">
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()"
+          *ngIf="isHandset$ | async">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        
+        <a routerLink="/">
+          <span>
+            <img src="assets/kcc_logo.jpeg" width="40">
+            <span>Kista Cicket Club</span>
+          </span>
+        </a>
+  
+        <div class="spacer"></div>
+        <a mat-list-item routerLink="/">
+          <i class="fas fa-home" matTooltip="Home"></i>
+        </a>
+        <a mat-list-item class="mat-button" routerLink="/home">Hem</a>
+        <a mat-list-item class="mat-button" routerLink="/news">Nyheter</a>
+        <a mat-list-item class="mat-button" routerLink="/about">Föreningen</a>
+        <a mat-list-item class="mat-button" routerLink="/media">Mediearkiv</a>
+        <a mat-list-item class="mat-button" routerLink="/contactus">Kontakta oss</a>
+      </mat-toolbar>    
+      <!-- Add Content Here -->
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
