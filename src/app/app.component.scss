@@ -19,60 +19,59 @@ body{
 /* ToolBar */
 
 .mat-toolbar.mat-primary {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
   
-  mat-toolbar a {
-    display: inline;
-    margin: 0 10px;
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-  }
-  
-  .sub-toolbar {
-    background-color: transparent;
-  }
-  
-  .spacer {
-    flex: 1 1 auto;
-  }
-  
-  /* Table */
-  
-  table {
-    width: 100%;
-  }
-  
-  /* Side nav bar */
-  
-  .container {
-    min-height:100vh;
-    background-color: white;
-  }
-  
-  .sidenav-container {
-    min-height:100vh;
-    background-color: white;
-  }
-  
-  .sidenav {
-    width: 200px;
-  }
-  
-  .sidenav .mat-toolbar {
-    background: inherit;
-  }
-  
-  // Used by Loading
-  .center-item{
-    top: 50%; 
-    text-align: center;
-  }
-  
-  .fa-exclamation-triangle {
-    color: red;
-  }
-  
+mat-toolbar a {
+  display: inline;
+  margin: 0 10px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.sub-toolbar {
+  background-color: transparent;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* Table */
+
+table {
+  width: 100%;
+}
+
+/* Side nav bar */
+
+.container {
+  height:50%;
+  background-color: white;
+}
+
+.sidenav-container {
+  min-height:100vh;
+  background-color: white;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+// Used by Loading
+.center-item{
+  top: 50%; 
+  text-align: center;
+}
+
+.fa-exclamation-triangle {
+  color: red;
+}
