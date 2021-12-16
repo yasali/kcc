@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { routing } from './app.routing';
 import { HashLocationStrategy, LocationStrategy, DatePipe } from '@angular/common';
-import { MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
+import { MatGridListModule, MatIconModule, MatListModule, MatPaginatorModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
 import { NewsComponent } from './news/news.component';
 import { AboutComponent } from './about/about.component';
 import { MediaComponent } from './media/media.component';
@@ -29,6 +29,8 @@ import { HomeComponent } from './home/home.component';
     MatListModule,
     MatIconModule,
     MatToolbarModule,
+    MatGridListModule,
+    MatPaginatorModule,
     BrowserAnimationsModule,
   ],
   providers: [
